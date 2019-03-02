@@ -11,9 +11,9 @@ The goal of this project was to create a reusable dataset with standardised use 
 
 
 ### Size
-#####14.7 million entries  
-#####840 mb uncompressed size  
-#####460 mb snappy compressed ORC  
+##### 14.7 million entries  
+##### 840 mb uncompressed size  
+##### 460 mb snappy compressed ORC  
 
 ### Use
 
