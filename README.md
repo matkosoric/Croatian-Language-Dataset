@@ -2,18 +2,18 @@
 Croatian Language Dataset (CLD)
 =======================================================
 
-This is a dataset of sentences on Croatian language for anyone interested in Natural Language Processing.
+This is a dataset of sentences in Croatian language for anyone interested in Natural Language Processing.
 The dataset is Spark's dataframe in a snappy compressed ORC format.
-Most of the sentences are from Croatian Wikipedia dump and OpenSubtitles project.
-There are still entries that do not belong here, wheather in a form of misspelled or grammatically incorrect sentences, logs, different languages, or weird tags.
+Most of the sentences are from the Croatian Wikipedia dump and OpenSubtitles project.
+There are still entries that do not belong here, whether in a form of misspelled or grammatically incorrect sentences, logs, different languages, or weird tags.
 However, those should be minimal.
 The goal of this project was to create a reusable dataset with standardised use of Croatian language for various purposes.
 
 
 ### Size
-#14.7 million entries
-#840 mb uncompressed size
-#460 mb snappy compressed ORC 
+##### 14.7 million entries  
+##### 840 mb uncompressed size  
+##### 460 mb snappy compressed ORC  
 
 ### Use
 
@@ -28,15 +28,15 @@ The goal of this project was to create a reusable dataset with standardised use 
     // Spark SQL usage
     cld.createOrReplaceTempView("cld")
     // filtering
-    spark.sql("SELECT * FROM cld WHERE sentence LIKE '%hannibal%'").show(30, false)
+    spark.sql("SELECT * FROM cld WHERE sentence LIKE '%Hannibal%'").show(30, false)
     // random
     spark.sql("SELECT *, rand() as random FROM cld order by random").drop("random").show(30, false)
 ```
 
+<pre><code>
 root
  |-- sentence: string (nullable = true)
 
-`
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 |sentence                                                                                                                                                                      |
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -72,7 +72,7 @@ root
 |Ono od Hannibala Lectera je pravo?                                                                                                                                            |
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 only showing top 30 rows
-`
+</code></pre>
 
 ### Created With
 
