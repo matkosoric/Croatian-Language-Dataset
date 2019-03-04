@@ -17,7 +17,7 @@ The goal of this project was to create a reusable dataset with standardised use 
 
 ### Use
 
-```java
+```scala
     val cld = spark
       .read
       .orc("src/main/resources/sentences.snappy.orc")
@@ -81,6 +81,8 @@ only showing top 30 rows
 * [wget 1.19.4](https://www.gnu.org/software/wget/)
 * [sed 4.4](https://www.gnu.org/software/sed/manual/sed.html)
 * [jsoup 1.8.3](https://jsoup.org/)
+* [kumo 1.17](http://kennycason.com/posts/2014-07-03-kumo-wordcloud.html)
+  
+### Word cloud
 
-### Results
-
+![Croatian Language Dataset - Wordcloud - Matko Soric](https://raw.githubusercontent.com/matkosoric/Croatian-Language-Dataset/master/wordcloud.png?raw=true "Croatian Language Dataset - Wordcloud - Matko Soric")
